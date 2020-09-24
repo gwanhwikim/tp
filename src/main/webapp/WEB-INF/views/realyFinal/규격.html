@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 등록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(244, 243, 250);
+        }
+        .my-content-bgcolor {
+            background-color: white;
+        }
+        .my-content-box {
+            padding-bottom: 100px;
+        }
+        .my-content-box-mw {
+            min-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-1 bg-white rounded row">
+        <div class="offset-md-2 col-md-2 col-2">
+            <a class="navbar-brand" href="#">브랜드 로고</a> <!-- 로고 이미지로 대체 -->
+        </div>
+        <div class="col-md-7 col-10 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">           <!-- ml-auto 왼쪽을 비움(우측정렬), mr-auto 오른쪽을 비움(좌측정렬) -->
+                    <li class="nav-item active">            <!-- active 활성화(진하게 표시) -->
+                        <a class="nav-link" href="#">Explore <span class="sr-only">reverse mountain</span></a>        <!-- sr-only 보이지 않지만 검색은 됨 접근성을 위해 사용, disabled 추가시 회색처리 클릭X -->
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Partnership</a>
+                    </li>
+                    <button type="button" class="btn btn-outline-info" style="margin-left: 100px;">Log-in</button>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="row align-items-center">        <!-- align-items-center 수직 중앙 정렬 -->
+            <div class="col-md-2 col-0"></div>               <!-- 좌측 기본 여백 -->
+
+            <div class="col-md-8 col-12 my-content-bgcolor my-content-box">                     <!-- 내용이 들어갈 div-->
+            </div>
+
+            <div class="col-md-2 col-0"></div>               <!-- 우측 기본 여백 -->
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+</html>

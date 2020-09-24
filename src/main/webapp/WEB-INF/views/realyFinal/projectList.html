@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 등록</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(244, 243, 250);
+        }
+
+        .my-content-bgcolor {
+            background-color: white;
+        }
+
+        .my-content-box {
+            padding-bottom: 100px;
+        }
+
+        .my-content-box-mw {
+            min-width: 900px;
+        }
+        .my-list-margin {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .my-lsit-content-padding {
+            padding: 15px 30px 15px 30px;
+        }
+        .my-thumnail-size {
+            padding: 10px 10px 10px 10px;
+            min-width: 200px;
+        }
+        .thumbnail-wrappper {
+            width: 25%;
+        }
+        .thumbnail {
+            position: relative;
+            padding-top: 100%; /* 1:1 ratio */
+            overflow: hidden;
+        } 
+        .thumbnail .centered {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-transform: translate(50%,50%);
+            -ms-transform: translate(50%,50%);
+            transform: translate(50%,50%);
+        }
+        .thumbnail .centered img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            height: auto;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-1 bg-white rounded row">
+        <div class="offset-md-2 col-md-2 col-2">
+            <a class="navbar-brand" href="#">브랜드 로고</a> <!-- 로고 이미지로 대체 -->
+        </div>
+        <div class="col-md-7 col-10 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">     <!-- ml-auto 왼쪽을 비움(우측정렬), mr-auto 오른쪽을 비움(좌측정렬) -->
+                    <li class="nav-item active">        <!-- active 활성화(진하게 표시) -->
+                        <a class="nav-link" href="#">Explore <span class="sr-only">reverse mountain</span></a>
+                        <!-- sr-only 보이지 않지만 검색은 됨 접근성을 위해 사용, disabled 추가시 회색처리 클릭X -->
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Partnership</a>
+                    </li>
+                    <button type="button" class="btn btn-outline-info" style="margin-left: 100px;">Log-in</button>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- align-items-center 수직 중앙 정렬 -->
+            <div class="col-md-2 col-0"></div> <!-- 좌측 기본 여백 -->
+
+            <!-- 내용이 들어갈 div-->
+            <div class="col-md-8 col-12 my-content-bgcolor my-content-box">
+
+                <!-- 상단 자동 슬라이드 뷰 -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100">test1</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">test2</div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">test3</div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <!-- /상단 자동 슬라이드 뷰 끝 -->
+                
+                <!-- 검색창 -->
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <select class="custom-select" name="area">
+                            <option value="all" selected>전체 지역</option>
+                            <option value="서울">서울</option>
+                            <option value="경기">경기</option>
+                            <option value="제주">제주</option>
+                            <option>내 위치 사용하기</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <select class="custom-select" name="sortBy">
+                            <option value="최신순" selected>최신순</option>
+                            <option value="좋아요순">좋아요순</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                </svg></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /검색창 -->
+
+                <br>
+
+                <!-- 메인 content -->
+                <div class="row">
+                    <!-- 좌측 여백 -->
+                    <div class="col-1"></div>
+                    <!-- /좌측 여백 -->
+
+                    <!-- 프로젝트 리스트 -->
+                    <div class="col-10">
+                        <!-- test 목록 1 -->
+                        <div class="row my-list-margin my-list-height">
+                            <!-- 썸네일 처리 -->
+                            <div class="col-2 my-thumnail-size" style="background-color: teal;">
+                                <div class="thumbnail-wrapper">
+                                    <div class="thumbnail">
+                                        <div class="centered">
+                                            <img src="img/main.jpg" class="landscape">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /썸네일 처리 -->
+                            <!-- 목록 간단 정보 -->
+                            <div class="col my-lsit-content-padding" style="background-color: tomato;">
+                                <div><h1>title</h1></div>
+                                <br>
+                                <div style="height: 100px"><h3>simpleContent</h3></div>
+                                <div class="float-right">likes</div>
+                            </div>
+                            <!-- /목록 간단 정보 -->
+                        </div><br>
+                        <!-- /test 목록 1 -->
+                        <!-- test 목록 2 -->
+                        <div class="row my-list-margin my-list-height">
+                            <!-- 썸네일 처리 -->
+                            <div class="col-2 my-thumnail-size" style="background-color: teal;">
+                                <div class="thumbnail-wrapper">
+                                    <div class="thumbnail">
+                                        <div class="centered">
+                                            <img src="img/download.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /썸네일 처리 -->
+                            <!-- 목록 간단 정보 -->
+                            <div class="col my-lsit-content-padding" style="background-color: tomato;">
+                                <div><h1>title</h1></div>
+                                <br>
+                                <div style="height: 100px"><h3>simpleContent</h3></div>
+                                <div class="float-right">likes</div>
+                            </div>
+                            <!-- /목록 간단 정보 -->
+                        </div>
+                        <!-- /test 목록 2 -->
+                    </div>
+                    <!-- /프로젝트 리스트 -->
+
+                </div>
+                <!-- /메인 content -->
+
+            </div>
+            <!-- /내용이 들어갈 div-->
+
+            <div class="col-md-2 col-0"></div> <!-- 우측 기본 여백 -->
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+<script>
+    $(document).ready(function () { // 상단 자동 슬라이드 시작
+        $('#myCarousel').find('.item').first().addClass('active');
+    });
+    $('.carousel').carousel({       // 상단 자동 슬라이드 시간 제어
+        interval: 5000              // 5초
+    })
+</script>
+
+</html>
